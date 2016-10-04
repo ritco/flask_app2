@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<title> Data collector app </title>
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <body>
+        <div class="container">
+            <h1>Collecting heights</h1>
+            <h3>Please fill the entries to get population statistics on heigt</h3>
+            <form action="{{url_for('success')}}" method="POST">
+                <input title="Your email with be safe with us" class="form-control" placeholder="Enter your email address" type="email" name="email_name" required> <br>
+                <input title="Your data with be safe with us" class="form-control" placeholder="Enter your height in cm" type="number" min="50" max="300" name="height_name" required><br>
+                <button type="submit"  class="btn btn-primary"> Submit </button>
+            </form>
+        </div>
+    </body </html>
